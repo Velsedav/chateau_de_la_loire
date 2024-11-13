@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  /* Force les paddings à l'intérieur au lieu de faire grandir les boîtes */
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+li {
+  list-style: none;
+}
+h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: white;
+}
+.btn {
+  background-color: #b9625d;
+  padding: 14px 28px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  border-style: none;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.SpcBtwn {
+  justify-content: space-between;
+}
+.AlgnCntr {
+  align-items: center;
+}
+.Mrgn50 {
+  margin: 50px;
+}
+/* HEADER */
+header nav {
+  width: 40%;
+}
+header {
+  padding: 0px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+header img {
+  width: 15%;
+}
+.bgRed {
+  background-color: #b9625d;
+}
+/* HERO */
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  backdrop-filter: blur(5px);
+}
+.hero img {
+  width: 100%;
+  object-fit: cover;
+}
+.hero div {
+  background-color: rgba(42, 38, 38, 0.347);
+  width: 50%;
+  /* absolute est par rapport à un relatif ou relatif le plus proche */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 100px 64px;
+  border-radius: 23px;
+  backdrop-filter: blur(10px);
+  /* FLOUTER */
+}
+.hero p {
+  font-size: 22px;
+  margin-bottom: 35px;
+  color: white;
+}
+/* object-fit: cover; remplir sans déformer */
+/* pourquoi display inline-block sur les <a> */
+/* NOS SERVICES */
+.NsSrvc {
+  width: 100%;
+  height: 100vh;
+  background-color: blue;
+}
+.NsSrvcCard {
+  position: relative;
+  display: block;
+  width: 323px;
+  height: 323px;
+}
+.NsSrvcCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.NsSrvcCard h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
