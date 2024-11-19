@@ -45,7 +45,7 @@ h1 {
 .AlgnCntr {
   align-items: center;
 }
-.SpcArnd{
+.SpcArnd {
   justify-content: space-around;
 }
 .SpcEvnl {
@@ -54,7 +54,7 @@ h1 {
 .Mrgn50 {
   margin: 50px;
 }
-.Wdth320{
+.Wdth320 {
   width: 320px;
 }
 /* HEADER */
@@ -66,7 +66,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
 }
 header a {
@@ -86,7 +86,7 @@ section {
 .bgRed {
   background-color: #b9625d;
 }
-.bgGrn{
+.bgGrn {
   background-color: greenyellow;
 }
 /* HERO */
@@ -95,7 +95,6 @@ section {
   height: 100vh;
   position: relative;
   backdrop-filter: blur(5px);
-
 }
 .hero img {
   width: 100%;
@@ -125,13 +124,13 @@ section {
 /* object-fit: cover; remplir sans déformer */
 /* pourquoi display inline-block sur les <a> */
 /* NOS SERVICES */
-.CntnrSrvcs div{
+.CntnrSrvcs div {
   /* background-color: #009344; */
   width: 60%;
   gap: 32px;
   /* gap est une propriété flex */
 }
-.CntnrSrvcs aside{
+.CntnrSrvcs aside {
   /* background-color: red; */
   width: 15%;
 }
@@ -139,38 +138,38 @@ section {
   position: sticky;
   top: 80px;
 }
-.CntnrSrvcs img{
+.CntnrSrvcs img {
   width: 300px;
   height: 300px;
   object-fit: cover;
   border-radius: 16px;
 }
-.Card{
+.Card {
   position: relative;
   display: block;
 }
-.Card h2{
+.Card h2 {
   z-index: 1;
   color: white;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 /* LISTE ASIDE */
-aside p{
+aside p {
   font-size: 15px;
   font-weight: 700;
 }
-aside{
+aside {
   box-shadow: 0px 2px 2px lightslategray;
 }
 
-.Wdth100{
+.Wdth100 {
   width: 100%;
 }
 /* FILIGRANE */
-.filigrane{
+.filigrane {
   position: fixed;
   top: 92px;
   left: 0px;
@@ -182,7 +181,7 @@ aside{
   color: white;
   padding: 32px;
 }
-.Hstr img{
+.Hstr img {
   display: inline-block;
   width: 480px;
   height: 320px;
@@ -190,37 +189,15 @@ aside{
   border-radius: 16px;
 }
 /* LES ORIGINES DU CHATEAU */
-.ClrRed{
+.ClrRed {
   color: #b9625d;
 }
-.pOrigin{
+.pOrigin {
   display: inline-block;
   width: 43%;
   /* Ne marchait pas avec 320px */
   /* background-color: blue; */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .NsSrvc {
   width: 100%;
