@@ -5,6 +5,11 @@
   /* Force les paddings à l'intérieur au lieu de faire grandir les boîtes */
   box-sizing: border-box;
 }
+:root{
+  --rouge :#b9625d;
+  --white:#F8FAFC;
+  --black:#302d2d;
+}
 body {
   font-family: "Inter", sans-serif;
   /* height: 8000px; */
@@ -19,10 +24,23 @@ li {
   margin-left: 4px;
   font-size: 14px;
 }
+aside ul li a:hover{
+  text-decoration: underline;
+}
 h1 {
   font-size: 32px;
   margin-bottom: 15px;
-  color: white;
+  color: var(--white);
+}
+/* Couleurs texte */
+.colorRed{
+  color: var(--rouge);
+}
+.colorWhite{
+  color: var(--white);
+}
+.colorBlack{
+  color: var(--black);
 }
 .Ctnr {
   width: 90%;
@@ -30,12 +48,12 @@ h1 {
   max-width: 1100px;
 }
 .btn {
-  background-color: #b9625d;
+  background-color: var(--rouge);
   padding: 14px 28px;
   border-radius: 4px;
   font-size: 1.5rem;
   border-style: none;
-  color: white;
+  color: var(--white);
   text-decoration: none;
 }
 .flex {
@@ -74,7 +92,7 @@ header {
   width: 100%;
 }
 header a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
 }
 header img {
@@ -108,7 +126,7 @@ section {
 }
 .hero div {
   background-color: rgba(42, 38, 38, 0.347);
-  width: 50%;
+  max-width: 50%;
   /* absolute est par rapport à un relatif ou relatif le plus proche */
   position: absolute;
   top: 50%;
@@ -123,7 +141,7 @@ section {
 .hero p {
   font-size: 22px;
   margin-bottom: 35px;
-  color: white;
+  color: var(--white);
 }
 /* object-fit: cover; remplir sans déformer */
 /* pourquoi display inline-block sur les <a> */
@@ -149,14 +167,25 @@ section {
   height: 300px;
   object-fit: cover;
   border-radius: 16px;
+  filter: 
+  drop-shadow(1px 2px 2px lightslategray);
+  transition: 0.2s ease-in-out;
 }
+.CntnrSrvcs img:hover {
+  filter: 
+  drop-shadow(1px 2px 2px #778899)
+  drop-shadow(2px 5px 4px hsl(210, 14%, 45%))
+  ;
+}
+
+
 .Card {
   position: relative;
   display: block;
 }
 .Card h2 {
   z-index: 1;
-  color: white;
+  color: var(--white);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -166,9 +195,10 @@ section {
 aside p {
   font-size: 15px;
   font-weight: 700;
+  color: var(--black);
 }
 aside {
-  box-shadow: 0px 2px 2px lightslategray;
+  box-shadow: 2px 2px 8px rgb(205, 208, 211);
   padding: 12px;
   border-radius: 16px;
 }
@@ -188,7 +218,7 @@ aside {
 
 /* HISTOIRE DU CHATEAU */
 .Hstr {
-  color: white;
+  color: var(--white);
   padding: 32px;
 }
 .Hstr img {
@@ -204,7 +234,8 @@ aside {
 }
 .pOrigin {
   display: inline-block;
-  width: 43%;
+  max-width: 43%;
+  color: var(--black);
   /* Ne marchait pas avec 320px */
   /* background-color: blue; */
 }
